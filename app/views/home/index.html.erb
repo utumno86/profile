@@ -1,0 +1,170 @@
+<header id="top" class="header">　
+        <div class="text-vertical-center">
+            <h1>Michael E. Nash</h1>
+            <h2>（許書聖）</h2>
+            <h3>Ruby on Rails Developer</h3>
+            <br>
+            <a href="#contact" class="btn btn-dark btn-lg">Contact Me</a>
+            <br>
+            <br>
+            <a href="https://s3.amazonaws.com/nashresume/Michael+Nash+Resume+v3.pdf" class="btn btn-dark btn-lg">My Resume(PDF)</a>
+        </div>
+    </header>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+              <%= image_tag 'callout.jpg', class: "img-responsive profile"%>
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <h2>I am a Ruby on Rails developer.</h2>
+                    <p class="lead">I am a recent graduate of The Iron Yard St Petersburg’s Ruby on Rails program. I am also a former academic, with an MA in Chinese History from Columbia and years of travel and language experience around Asia.</p>
+                    <p class="lead">My current projects include (but are not limited to) developing a series of Rails
+                        engines as a supplement to rails composer, working through the problems on the Euler Project, working through the Learnynode program to learn Node.js, and and learning the basics of Python.</p>
+                    <p>Programming Languages:</p>
+                    <ul>
+                        <li><a href='https://github.com/utumno86/Programs/blob/master/eight.rb'>Ruby</a></li>
+                          <ul>
+                            <li>Rails (see examples below)</li>
+                            <li><a href='https://github.com/utumno86/CreamOfTheCrop/blob/master/app/views/wrestlers/index.slim'>Slim/Haml</a></li>
+                            <li><a href='https://github.com/utumno86/RspecTutorial'>RSpec</a></li>
+                            <li>JSON APIs</li>
+                          </ul>
+                        <li><a href='https://github.com/utumno86/exercism_exercises/blob/master/javascript/anagram/anagram.js'>Javascript</a></li>
+                          <ul>
+                            <li><a href='https://github.com/utumno86/bloggertron/blob/master/app/assets/javascripts/application.js'>ajax/JQuery</a></li>
+                            <li><a href='https://github.com/utumno86/LearnYouNode/blob/master/juggling.js'>Node.js</a></li>
+                            <li>Angular JS</li>
+                          </ul>
+                        <li><a href='https://github.com/utumno86/Pythoncoursera/blob/master/dictionaries.py'>Python</a></li>
+                          <ul>
+                            <li><a href='https://github.com/utumno86/testing'>django</a></li>
+                          </ul>
+                        <li>HTML/CSS</li>
+                          <ul>
+                            <li><a href='https://github.com/utumno86/twixter/blob/master/app/views/twixts/index.html.erb'>Twitter Bootstrap</a></li>
+                            <li><a href='https://github.com/utumno86/bloggertron/blob/master/app/views/posts/index.html.erb'> Zurb Foundation</a></li>
+                            <li><a href='https://github.com/utumno86/CreamOfTheCrop/blob/master/app/assets/stylesheets/application.css.scss'> Sass/SCSS</a></li>
+                          </ul>
+                    </ul>
+                    <p>I am also proficient in SQL databases (notably PostgreSQL), Git, deployment to Heroku, as well as in Chinese langauge, history, and economics topics.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>My Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <h3>Cream of the Crop</h3>
+                              <h6>Iron Yard Final Project</h6>
+                              <h6>The most interesting bit is match generation <a href="https://github.com/utumno86/CreamOfTheCrop/blob/master/app/models/match.rb"> here.</a></h6>
+                                <a href="http://michaelenash.com/">
+                                    <%= image_tag 'portfolio-1.png', class: "img-portfolio img-responsive"%>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <h3> Twixter</h3>
+                              <h6> Iron Yard Project with Duncan Neal</h6>
+                              <h6> The most interesting bit is use of the acts_as_followable gem for a Timeline<a href="https://github.com/utumno86/twixter/blob/master/app/controllers/users_controller.rb"> here.</a></h6>
+                                <a href="http://twixter.herokuapp.com/">
+                                    <%= image_tag 'portfolio-2.png', class: "img-portfolio img-responsive"%>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <h3>Glamazon</h3>
+                              <h6>Iron Yard Project with Kelly Bristol</h6>
+                              <h6>The most interesting bit is the way I implemented a cart system<a href= "https://github.com/utumno86/glamazon/blob/master/app/controllers/cart_controller.rb"> here.</a></h6>
+                                <a href="http://glamazon.herokuapp.com/">
+                                    <%= image_tag 'portfolio-3.png', class: "img-portfolio img-responsive"%>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                              <h3>To Do Lists</h3>
+                              <h6>An Iron Yard Project</h6>
+                              <h6> The most interesting bit is my hand-rolled search module<a href="https://github.com/utumno86/todolist/blob/master/app/models/concerns/searchable.rb"> here.</a></h6>
+                                <a href="http://todos-86.herokuapp.com/">
+                                    <%= image_tag 'portfolio-4.jpg', class: "img-portfolio img-responsive"%>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <a href="https://gist.github.com/utumno86/6646933ccabeda5f004b" class="btn btn-lg btn-dark">My Resume(.md)</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                  <a href="https://www.youtube.com/watch?v=0heOms7DK6s&feature=youtu.be" class="btn btn-lg btn-dark">Cream of the Crop Demo</a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- Footer -->
+    <footer>
+        <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Michael E. Nash</strong>
+                    </h4>
+                    <p>Tampa, FL</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (813) 326-4637</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:utumno86@gmail.com">utumno86@gmail
+                            .com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://github.com/utumno86"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://utumno86.wordpress.com/"><i class="fa fa-wordpress fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/utumno86"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/michaelearlnash"><i class="fa fa-linkedin fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Michael E. Nash 2015</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    </footer>
