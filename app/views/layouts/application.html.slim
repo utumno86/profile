@@ -10,18 +10,12 @@ html
     meta name="description" content="#{content_for?(:description) ? yield(:description) : 'Profile'}"
     meta name="author" content=""
     == stylesheet_link_tag "application", :media => 'all', 'data-turbolinks-track' => true
-
-    / loading the Stylish-Portfolio CSS
-
-    == stylesheet_link_tag "stylish-portfolio", :media => 'all', 'data-turbolinks-track' => true
     == javascript_include_tag 'application', 'data-turbolinks-track' => true
     == csrf_meta_tags
     == stylesheet_link_tag "font-awesome/font-awesome.min.css", :type => 'text/css'
     == stylesheet_link_tag "http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
 
   body
-    header
-      == render 'layouts/navigation'
-    main[role="main"]
-      == render 'layouts/messages'
-      == yield
+    == render 'layouts/navigation'
+    == render 'layouts/messages'
+    == yield
