@@ -9,8 +9,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'font-awesome-sass'
 
-gem 'tickle'
-gem 'chronic'
 group :development, :test do
   gem 'byebug'
 end
