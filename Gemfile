@@ -14,6 +14,7 @@ gem 'devise'
 gem 'pg'
 gem 'puma'
 gem 'slim-rails'
+gem 'rails_admin'
 
 group :development, :test do
   gem 'byebug'
