@@ -16,5 +16,6 @@ html
 
   body
     == render 'layouts/navigation'
-    == render 'layouts/messages'
-    == yield
+    .wrapper
+      == render 'layouts/messages'
+      == yield
