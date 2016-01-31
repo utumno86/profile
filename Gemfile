@@ -15,6 +15,7 @@ gem 'pg'
 gem 'puma'
 gem 'slim-rails'
 gem 'rails_admin'
+gem 'stripe'
 
 group :development, :test do
   gem 'byebug'
