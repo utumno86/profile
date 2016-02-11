@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   root to: 'home#index'
   devise_for :users
   resources :charges, :only => [:new, :create]
+  resources :payment, :only => [:new, :create]
 end
