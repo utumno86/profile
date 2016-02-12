@@ -1,5 +1,5 @@
+# Charges controller is for handling stripe transactions
 class ChargesController < ApplicationController
-
   def new
   end
 
@@ -8,8 +8,8 @@ class ChargesController < ApplicationController
     @amount = 500
 
     customer = Stripe::Customer.create(
-      :email => params[:stripeEmail],
-      :source  => params[:stripeToken]
+      :email  => params[:stripeEmail],
+      :source => params[:stripeToken]
     )
 
     charge = Stripe::Charge.create(

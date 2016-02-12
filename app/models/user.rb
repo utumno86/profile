@@ -1,3 +1,4 @@
+# Users are handled by devise, but are used to log in to the site
 class User < ActiveRecord::Base
   has_many :payments
 
