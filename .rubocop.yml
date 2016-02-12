@@ -1,5 +1,6 @@
 AllCops:
-  RunRailsCops: true
+  Rails:
+    Enabled: true
   Include:
     - '**/Gemfile'
     - '**/Rakefile'
@@ -10,7 +11,7 @@ AllCops:
    - 'vendor/bundle/**/*'
 
 Style/HashSyntax:
-  EnforcedStyle: ruby18
+  EnforcedStyle: hash_rockets
 
 Metrics/LineLength:
   Max: 120
