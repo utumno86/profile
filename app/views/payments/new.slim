@@ -10,8 +10,10 @@
         | You can pay him here through the super secure Stripe button on the next page.
 .row
   .spacer
-    = render 'form'
+    .col-sm-offset-3.col-sm-6.text-center
+      = render 'form'
 
-  .spacer
-    .text-center
-			= link_to 'Back', root_path, class: "btn btn-large btn-danger"
+.row
+  .col-sm-offset-3.col-sm-6.text-center
+    br
+		= link_to 'Back', root_path, class: "btn btn-large btn-danger"
