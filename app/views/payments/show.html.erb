@@ -9,9 +9,12 @@
             <p><%= flash[:error] %></p>
           </div>
           <% end %>
+          <h2> The below stripe button will allow you to pay Michael for the following amount and purpose</h2>
           <label class="amount">
-            <span>Amount: $5.00</span>
+            <span>Amount:<%= number_to_currency(@payment.amount/100) %></span>
           </label>
+          <label class="amount">
+            <span>Purpose: <%=@payment.purpose %>
         </article>
       </div>
     </div>
@@ -23,8 +26,8 @@
       <div class="text-center">
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-description="A month's subscription"
-          data-amount="<%= @amount %>"
+          data-description="<%= @payment.purpose  %>"
+          data-amount="<%= @payment.amount %>"
           data-locale="auto">
         </script>
       </div>
