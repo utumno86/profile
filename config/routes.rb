@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   devise_for :users, :controllers => { :registrations => 'registrations' }
   resources :charges, :only => [:new, :create]
   resources :payments, :only => [:new, :create, :show]
-  resources :posts
+  resources :posts, :only => [:index, :show]
 end

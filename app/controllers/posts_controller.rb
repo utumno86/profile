@@ -1,20 +1,11 @@
-# a controller for creating Blog Posts
+# A controller for showing Blog posts. This is intended to be run by the Admin user
+# I.E. Me, so the rest of the CRUD actions are handled by the Admin panel
 class PostsController < ApplicationController
-  def new
-  end
-
-  def create
-  end
-
   def index
+    @posts = Post.all
   end
 
   def show
-  end
-
-  def update
-  end
-
-  def delete
+    @post = Post.find(params[:id])
   end
 end
