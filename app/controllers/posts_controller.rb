@@ -2,7 +2,7 @@
 # I.E. Me, so the rest of the CRUD actions are handled by the Admin panel
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    @posts = Post.order(:blogdate => :desc).limit(5)
   end
 
   def show
