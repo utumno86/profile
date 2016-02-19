@@ -7,4 +7,7 @@
       - @posts.each do |post|
         h3
           = post.title
+        = post.blogdate
         = post.content
+        - unless post.image.blank?
+          = image_tag post.image.url, class: "img-responsive"
