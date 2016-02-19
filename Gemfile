@@ -18,6 +18,7 @@ gem 'rails_admin'
 gem 'stripe'
 gem 'carrierwave'
 gem 'fog'
+gem 'semantic_logger'
 
 group :development, :test do
   gem 'byebug'

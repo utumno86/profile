@@ -412,6 +412,8 @@ GEM
       multi_json (~> 1.0)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
+    semantic_logger (3.0.1)
+      concurrent-ruby (~> 1.0)
     shellany (0.0.1)
     slim (3.0.6)
       temple (~> 0.7.3)
@@ -504,6 +506,7 @@ DEPENDENCIES
   rubocop
   sass-rails (~> 5.0)
   selenium-webdriver
+  semantic_logger
   slim-rails
   spring
   spring-commands-rspec
