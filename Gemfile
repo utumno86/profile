@@ -16,6 +16,8 @@ gem 'puma'
 gem 'slim-rails'
 gem 'rails_admin'
 gem 'stripe'
+gem 'carrierwave'
+gem 'fog'
 
 group :development, :test do
   gem 'byebug'
