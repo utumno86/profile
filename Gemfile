@@ -19,6 +19,7 @@ gem 'stripe'
 gem 'carrierwave'
 gem 'fog'
 gem 'semantic_logger'
+gem 'mini_magick'
 
 group :development, :test do
   gem 'byebug'
