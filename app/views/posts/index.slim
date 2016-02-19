@@ -1,0 +1,10 @@
+- content_for :title do
+	| Blog Posts
+.row
+  .spacer
+    .col-sm-offset-3.col-sm-6
+      h1.text-center Michael's Blog
+      - @posts.each do |post|
+        h3
+          = post.title
+        = post.content
