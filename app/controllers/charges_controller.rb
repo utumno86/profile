@@ -5,7 +5,6 @@ class ChargesController < ApplicationController
 
   def create
     # Amount in cents
-    print params
     @payment = Payment.find(params[:id])
     @amount = @payment.amount.to_i
 
