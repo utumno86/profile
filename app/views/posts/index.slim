@@ -15,7 +15,7 @@
           = image_tag post.image.url, class: "img-responsive"
         .spacer
         p.text-left
-          = post.content
+          = truncate(post.content, length: 250) {link_to 'Continue', posts_path}
 .row
   .col-sm-offset-3.col-sm-6.text-center
     = paginate @posts
