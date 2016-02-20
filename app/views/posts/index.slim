@@ -5,15 +5,17 @@
     .col-sm-offset-3.col-sm-6
       h1.text-center Michael's Blog
       - @posts.each do |post|
-        h2
+        h2.spacer
           = post.title
         h5.text-right
-          |Posted on 
+          |Posted on
           = post.blogdate.strftime('%A, %b %d')
-        .spacer
+        .spacer.text-right
         - if post.image.present?
           = image_tag post.image.url, class: "img-responsive"
         .spacer
         p.text-left
           = post.content
-        .spacer
+.row
+  .col-sm-offset-3.col-sm-6.text-center
+    = paginate @posts
