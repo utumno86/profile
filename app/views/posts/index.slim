@@ -7,8 +7,8 @@
       - @posts.each do |post|
         h2
           = post.title
-        h5.text-right Posted on
-
+        h5.text-right
+          |Posted on 
           = post.blogdate.strftime('%A, %b %d')
         .spacer
         - if post.image.present?
