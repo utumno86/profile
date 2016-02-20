@@ -7,7 +7,7 @@
       - @posts.each do |post|
         h3
           = post.title
-        = post.blogdate
-        = post.content
-        - unless post.image.blank?
+        - if post.image.present?
           = image_tag post.image.url, class: "img-responsive"
+        = post.blogdate.strftime('%A, %b %d')
+        = post.content
