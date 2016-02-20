@@ -1,21 +1,23 @@
 - content_for :title do
 	| Blog Posts
 .row
-  .spacer
-    .col-sm-offset-3.col-sm-6
-      h1.text-center Michael's Blog
-      - @posts.each do |post|
-        h2.spacer
-          = post.title
-        h5.text-right
-          |Posted on
-          = " " + post.blogdate.strftime('%A, %b %d')
-        .spacer.text-right
-        - if post.image.present?
-          = image_tag post.image.url, class: "img-responsive"
-        .spacer
-        p.text-left
-          = truncate(post.content, length: 250) {link_to 'Continue', post}
+  .col-sm-offset-3.col-sm-6
+    h1.text-center Michael's Blog
+    .spacer
+    - @posts.each do |post|
+      h2
+        = post.title
+      h5.text-right
+        |Posted on
+        = " " + post.blogdate.strftime('%A, %B %d %Y')
+      .spacer.text-right
+      - if post.image.present?
+        = image_tag post.image.url, class: "img-responsive center-block"
+      .spacer
+      p.text-left
+        = truncate(post.content, length: 250) {link_to 'Continue', post}
+      hr
+      .spacer
 .row
   .col-sm-offset-3.col-sm-6.text-center
     = paginate @posts

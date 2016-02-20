@@ -6,7 +6,7 @@
       = @post.title
     h5.text-right
       | Posted on
-      = " " + @post.blogdate.strftime('%A, %b %d')
+      = " " + @post.blogdate.strftime('%A, %B %d %Y')
     .spacer
     - if @post.image.present?
       = image_tag @post.image.url, class: "img-responsive center-block"
