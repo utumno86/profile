@@ -3,13 +3,14 @@
   <li><%= link_to 'Edit account', edit_user_registration_path %></li>
   <li><%= link_to 'Sign out', destroy_user_session_path, :method => 'delete' %></li>
   <li><%= link_to 'Pay Michael Money', new_payment_path %></li>
-  <li><%= link_to 'Blog', posts_path %></li>
   <%if current_user.name %>
     <li><div class="navbar-brand"> Welcome, <%= current_user.name %></div></li>
   <% end  %>
+    <li><%= link_to 'Blog', posts_path %></li>
 <% else %>
   <li><%= link_to 'Sign in', new_user_session_path %></li>
   <li><%= link_to 'Sign up', new_user_registration_path %></li>
+  <li><%= link_to 'Blog', posts_path %></li>
 <% end %>
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
