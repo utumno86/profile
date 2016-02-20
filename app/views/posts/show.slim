@@ -1,2 +1,17 @@
-h6
-  | There are words on this page
+- content_for :title do
+	= truncate(@post.title, length: 15)
+.row
+  .col-sm-offset-3.col-sm-6
+    h1.text-center
+      = @post.title
+    h5.text-right
+      | Posted on
+      = " " + @post.blogdate.strftime('%A, %b %d')
+    .spacer
+    - if @post.image.present?
+      = image_tag @post.image.url, class: "img-responsive center-block"
+    .spacer
+    p.text-left
+      = @post.content
+    .text-left
+      = link_to 'Back', posts_path, class: 'btn btn-large btn-danger'
