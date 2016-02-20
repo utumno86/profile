@@ -5,9 +5,15 @@
     .col-sm-offset-3.col-sm-6
       h1.text-center Michael's Blog
       - @posts.each do |post|
-        h3
+        h2
           = post.title
+        h5.text-right Posted on
+
+          = post.blogdate.strftime('%A, %b %d')
+        .spacer
         - if post.image.present?
           = image_tag post.image.url, class: "img-responsive"
-        = post.blogdate.strftime('%A, %b %d')
-        = post.content
+        .spacer
+        p.text-left
+          = post.content
+        .spacer
