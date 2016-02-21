@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   resources :charges, :only => [:new, :create]
   resources :payments, :only => [:new, :create, :show]
   resources :posts, :only => [:index, :show]
+  resources :comments, :only => [:create, :update, :destroy]
 end
