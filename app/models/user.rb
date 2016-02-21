@@ -1,6 +1,8 @@
 # Users are handled by devise, but are used to log in to the site
 class User < ActiveRecord::Base
   has_many :payments
+  has_many :comments
+  has_many :posts
 
   enum :role => [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
