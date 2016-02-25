@@ -18,3 +18,10 @@
 hr
 .spacer.row
   .col-sm-offset-3.col-sm-6
+    ul
+      - @comments.each do |comment|
+        p
+          = comment.content
+        - if comment.user.name.present?
+          p
+            = "created by: #{comment.user.name} at #{comment.created_at.strftime("%B %e %Y %I:%M%p")}"
