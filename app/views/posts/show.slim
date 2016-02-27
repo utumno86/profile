@@ -22,7 +22,10 @@ hr
           = comment.content
         - if comment.user.name.present?
           p
-            = "created by: #{comment.user.name} at #{comment.created_at.strftime("%B %e %Y %I:%M%p")}"
+            = "created by: #{comment.user.name} at #{comment.created_at.strftime("%B %e %Y %I:%M %p")}"
+
+        hr
+
 hr
 .spacer.row
   .col-sm-offset-3.col-sm-6
@@ -34,6 +37,9 @@ hr
       = f.text_area :content
       br
       = f.submit
+
 .col-sm-offset-3.col-sm-6
   .text-left
       = link_to 'Back', posts_path, class: 'btn btn-large btn-danger'
+
+  .spacer
