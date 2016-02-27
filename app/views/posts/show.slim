@@ -13,8 +13,6 @@
     .spacer
     p.text-left
       = @post.content
-    .text-left
-      = link_to 'Back', posts_path, class: 'btn btn-large btn-danger'
 hr
 .spacer.row
   .col-sm-offset-3.col-sm-6
@@ -25,3 +23,17 @@ hr
         - if comment.user.name.present?
           p
             = "created by: #{comment.user.name} at #{comment.created_at.strftime("%B %e %Y %I:%M%p")}"
+hr
+.spacer.row
+  .col-sm-offset-3.col-sm-6
+    = form_for ( @comment ) do |f|
+      = f.hidden_field :user_id, :value => current_user.id
+      = f.hidden_field :post_id, :value => @post.id
+      = f.label "Leave a Comment"
+      br
+      = f.text_area :content
+      br
+      = f.submit
+.col-sm-offset-3.col-sm-6
+  .text-left
+      = link_to 'Back', posts_path, class: 'btn btn-large btn-danger'
