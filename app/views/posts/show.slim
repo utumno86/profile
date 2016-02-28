@@ -27,16 +27,17 @@ hr
         hr
 
 hr
-.spacer.row
-  .col-sm-offset-3.col-sm-6
-    = form_for ( @comment ) do |f|
-      = f.hidden_field :user_id, :value => current_user.id
-      = f.hidden_field :post_id, :value => @post.id
-      = f.label "Leave a Comment"
-      br
-      = f.text_area :content
-      br
-      = f.submit
+-if user_signed_in?
+  .spacer.row
+    .col-sm-offset-3.col-sm-6
+      = form_for ( @comment ) do |f|
+        = f.hidden_field :user_id, :value => current_user.id
+        = f.hidden_field :post_id, :value => @post.id
+        = f.label "Leave a Comment"
+        br
+        = f.text_area :content
+        br
+        = f.submit
 
 .col-sm-offset-3.col-sm-6
   .text-left
