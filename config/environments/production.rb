@@ -72,13 +72,13 @@ Rails.application.configure do
   config.active_support.deprecation = :notify
 
   config.action_mailer.smtp_settings = {
-    address: "smtp.sendgrid.com",
+    address: 'smtp.sendgrid.com',
     port: 587,
     domain: Rails.application.secrets.domain_name,
-    authentication: "plain",
+    authentication: 'plain',
     enable_starttls_auto: true,
-    user_name: Rails.application.secrets.email_provider_username,
-    password: Rails.application.secrets.email_provider_apikey
+    user_name: ENV['SENDGRID_USERNAME'],
+    password: ENV['SENDGRID_PASSWORD']
   }
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'mnashprofile.herokuapp.com' }
