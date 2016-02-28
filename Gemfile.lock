@@ -285,9 +285,6 @@ GEM
     lumberjack (1.0.10)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
-    mandrill-api (1.0.53)
-      excon (>= 0.16.0, < 1.0)
-      json (>= 1.7.7, < 2.0)
     method_source (0.8.2)
     mime-types (2.99.1)
     mini_magick (4.4.0)
@@ -427,6 +424,8 @@ GEM
       websocket (~> 1.0)
     semantic_logger (3.1.0)
       concurrent-ruby (~> 1.0)
+    sendgrid (1.2.4)
+      json
     shellany (0.0.1)
     slim (3.0.6)
       temple (~> 0.7.3)
@@ -504,7 +503,6 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   launchy
-  mandrill-api
   mini_magick
   pg
   pry-rails
@@ -522,6 +520,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   selenium-webdriver
   semantic_logger
+  sendgrid
   slim-rails
   spring
   spring-commands-rspec
