@@ -8,7 +8,7 @@ class CommentsController < ApplicationController
     set_post
     @comment = Comment.create(comment_params)
     if @comment.save
-      flash[:success] = 'Your comment was successfully added!'
+      flash[:notice] = 'Your comment was successfully added!'
       redirect_to @post
     end
   end
@@ -17,7 +17,7 @@ class CommentsController < ApplicationController
     set_post
     @comment = Comment.create(comment_params)
     if @comment.update(comment_params)
-      flash[:success] = 'Your comment was successfully update!'
+      flash[:notice] = 'Your comment was successfully update!'
       redirect_to @post
     end
   end
@@ -25,7 +25,7 @@ class CommentsController < ApplicationController
   def destroy
     @comment = Comment.find(params[:comment][:id])
     if @comment.destroy
-      flash[:notice] = 'Your comment was successfully deleted!'
+      flash[:success] = 'Your comment was successfully deleted!'
       redirect_to :back
     end
   end
