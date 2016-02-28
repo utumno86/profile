@@ -15,19 +15,18 @@ class CommentsController < ApplicationController
 
   def update
     set_post
-    @comment = Comment.create(comment_params)
+    @comment = Comment.find(params[:format])
     if @comment.update(comment_params)
       flash[:notice] = 'Your comment was successfully update!'
-      redirect_to @post
+      redirect_to :back
     end
   end
 
   def destroy
-    puts params
-    @comment = Comment.find(params[:id])
+    @comment = Comment.find(params[:format])
     if @comment.destroy
       flash[:success] = 'Your comment was successfully deleted!'
-      redirect_to @post
+      redirect_to :back
     end
   end
 
