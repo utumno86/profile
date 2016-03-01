@@ -19,7 +19,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'semantic_logger'
 gem 'mini_magick'
-gem 'sendgrid'
+gem 'sendgrid-ruby'
 
 group :development, :test do
   gem 'byebug'
