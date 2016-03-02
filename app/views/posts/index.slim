@@ -15,7 +15,7 @@
         = image_tag post.image.url, class: "img-responsive center-block"
       .spacer
       p.text-left
-        = simple_format(truncate(post.content, length: 250) {link_to 'Continue', post})
+        = truncate(post.content, length: 250) {link_to 'Continue', post}
       hr
       .spacer
 .row
