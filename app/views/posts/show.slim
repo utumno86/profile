@@ -12,14 +12,14 @@
       = image_tag @post.image.url, class: "img-responsive center-block"
     .spacer
     p.text-left
-      = @post.content
+      = simple_format(@post.content)
 hr
 .spacer.row
   .col-sm-offset-3.col-sm-6
     ul
       - @comments.each do |comment|
         p
-          = comment.content
+          = simple_format(comment.content)
         -if user_signed_in?
           - if comment.user_id == current_user.id
             .text-left
