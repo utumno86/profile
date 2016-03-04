@@ -30,6 +30,7 @@ TODO List
 -   Format blog posts for Github Markdown
 -   Draw stripe email parameter automatically from current_user
 -   Remove the Hamburger menu icon from the Navbar when not on the home page
+-   Write an Rspec suite to test functionality (for some reason)
 -   Fix JQuery on the home page to work consitently
 -   Fix terrible looking comments
 -   Generally clean up the front end
