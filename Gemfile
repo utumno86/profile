@@ -22,6 +22,7 @@ gem 'mini_magick'
 gem 'sendgrid-ruby'
 gem 'pry-rails'
 gem 'pry-rescue'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'byebug'
