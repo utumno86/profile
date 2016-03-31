@@ -12,7 +12,7 @@
       = image_tag @post.image.url, class: "img-responsive center-block"
     .spacer
     p.text-left
-      = markdown.render(@post.content)
+      = markdown(@post.content)
 hr
 .spacer.row
   .col-sm-offset-3.col-sm-6
