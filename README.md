@@ -27,7 +27,7 @@ a Rails developer.
 TODO List
 ---------
 
--   Format blog posts for Github Markdown
+-   Format blog posts for Github Markdown (Work In Progress, 03-30-2016)
 -   Draw stripe email parameter automatically from current_user
 -   Remove the Hamburger menu icon from the Navbar when not on the home page
 -   Write an Rspec suite to test functionality (for some reason)
