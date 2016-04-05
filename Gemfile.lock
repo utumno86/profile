@@ -335,7 +335,7 @@ GEM
     pry-rescue (1.4.2)
       interception (>= 0.5)
       pry
-    puma (3.2.0)
+    puma (3.3.0)
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
@@ -499,7 +499,7 @@ GEM
       activemodel (>= 4.2)
       debug_inspector
       railties (>= 4.2)
-    websocket (1.2.2)
+    websocket (1.2.3)
     xml-simple (1.1.5)
     xpath (2.0.0)
       nokogiri (~> 1.3)
