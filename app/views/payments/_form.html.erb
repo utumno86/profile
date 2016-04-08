@@ -17,7 +17,7 @@
   </div>
   <div class="form-group">
     <%= f.label :amount %> In USD<br>
-    <%= f.number_field :amount, class: "form-control" %>
+    <%= f.number_field :amount, class: "form-control", :step => 0.01 %>
   </div>
   <div class="actions">
     <%= f.submit 'Submit', :class => "btn btn-large btn-primary" %>
