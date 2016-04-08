@@ -7,11 +7,6 @@
     <div class="col-sm-6 col-sm-offset-3">
       <div class="text-center">
         <article>
-          <% if flash[:error].present? %>
-          <div id="error_explanation">
-            <p><%= flash[:error] %></p>
-          </div>
-          <% end %>
           <h2> The below stripe button will allow you to pay Michael for the following amount and purpose</h2>
           <label class="amount">
             <span>Amount:<%= number_to_currency(@payment.amount/100) %></span>
