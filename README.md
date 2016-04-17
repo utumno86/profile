@@ -27,9 +27,8 @@ a Rails developer.
 TODO List
 ---------
 
--   Draw stripe email parameter automatically from current_user (Work in Progress 04-02-2016)
+-   Write an Rspec suite to test functionality (for some reason)(Work In Progress 04-17-2016)
 -   Remove the Hamburger menu icon from the Navbar when not on the home page
--   Write an Rspec suite to test functionality (for some reason)
 -   Fix JQuery on the home page to work consitently
 -   Fix terrible looking comments
 -   Generally clean up the front end
