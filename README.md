@@ -29,7 +29,7 @@ TODO List
 
 -   Write an Rspec suite to test functionality (for some reason)(Work In Progress 04-17-2016)
 -   Remove the Hamburger menu icon from the Navbar when not on the home page
--   Fix JQuery on the home page to work consitently
+-   Fix JQuery on the home page to work consitently(Work In Progress 04-21-2016)
 -   Fix terrible looking comments
 -   Generally clean up the front end
 -   Clean up the way the site looks in mobile
