@@ -59,11 +59,12 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
-    carrierwave (0.11.0)
+    carrierwave (0.11.2)
       activemodel (>= 3.2.0)
       activesupport (>= 3.2.0)
       json (>= 1.7)
       mime-types (>= 1.16)
+      mimemagic (>= 0.3.0)
     childprocess (0.5.9)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.1)
@@ -183,7 +184,7 @@ GEM
       multi_json (~> 1.10)
     fog-local (0.3.0)
       fog-core (~> 1.27)
-    fog-openstack (0.1.4)
+    fog-openstack (0.1.5)
       fog-core (>= 1.38)
       fog-json (>= 1.0)
       fog-xml (>= 0.1)
@@ -215,7 +216,7 @@ GEM
     fog-serverlove (0.1.2)
       fog-core
       fog-json
-    fog-softlayer (1.1.0)
+    fog-softlayer (1.1.1)
       fog-core
       fog-json
     fog-storm_on_demand (0.1.1)
@@ -239,9 +240,9 @@ GEM
     fog-xml (0.1.2)
       fog-core
       nokogiri (~> 1.5, >= 1.5.11)
-    font-awesome-rails (4.6.1.0)
+    font-awesome-rails (4.6.2.0)
       railties (>= 3.2, < 5.1)
-    font-awesome-sass (4.5.0)
+    font-awesome-sass (4.6.2)
       sass (>= 3.2)
     foreman (0.81.0)
       thor (~> 0.19.1)
@@ -427,14 +428,14 @@ GEM
       rspec-mocks (~> 3.4.0)
       rspec-support (~> 3.4.0)
     rspec-support (3.4.1)
-    rubocop (0.39.0)
-      parser (>= 2.3.0.7, < 3.0)
+    rubocop (0.40.0)
+      parser (>= 2.3.1.0, < 3.0)
       powerpack (~> 0.1)
       rainbow (>= 1.99.1, < 3.0)
       ruby-progressbar (~> 1.7)
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.8.0)
-    ruby_dep (1.2.0)
+    ruby_dep (1.3.1)
     rubyzip (1.2.0)
     safe_yaml (1.0.4)
     sass (3.4.22)
@@ -476,7 +477,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    stripe (1.41.0)
+    stripe (1.42.0)
       rest-client (~> 1.4)
     temple (0.7.6)
     thor (0.19.1)
@@ -561,4 +562,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.12.1
+   1.12.3
