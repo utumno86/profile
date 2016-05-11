@@ -23,6 +23,7 @@ gem 'sendgrid-ruby'
 gem 'pry-rails'
 gem 'pry-rescue'
 gem 'redcarpet'
+gem 'twitter'
 
 group :development, :test do
   gem 'byebug'
