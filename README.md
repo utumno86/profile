@@ -28,7 +28,6 @@ TODO List
 ---------
 
 -   Write an Rspec suite to test functionality (for some reason)(Work In Progress 04-22-2016)
-- Set up a rbenv configuration file for this repo.
 - Set up a Twitter API to post to twitter whenever I make a blog post
 -   Remove the Hamburger menu icon from the Navbar when not on the home page
 -   Fix terrible looking comments
