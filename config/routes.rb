@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   resources :payments, :only => [:new, :create, :show]
   resources :posts, :only => [:index, :show]
   resources :comments, :only => [:create, :update, :destroy]
-  resources :tweets, :only =>[:create]
+  get 'tweets', :to => 'tweets#create', :as => 'create_tweets'
   delete 'comments', :to => 'comments#destroy', :as => 'comment_destroy'
 end
