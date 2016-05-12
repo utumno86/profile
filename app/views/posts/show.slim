@@ -43,7 +43,7 @@ hr
         br
         = f.submit
 
--if current_user.is_admin
+-if user_signed_in? && current_user.is_admin
   .spacer.row
     .col-sm-offset-3.col-sm-6
       = link_to 'Back', tweets_path, class: 'btn btn-large btn-success'
