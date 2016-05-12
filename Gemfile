@@ -24,6 +24,7 @@ gem 'pry-rails'
 gem 'pry-rescue'
 gem 'redcarpet'
 gem 'twitter'
+gem 'tweetstream'
 
 group :development, :test do
   gem 'byebug'
