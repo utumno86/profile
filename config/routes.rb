@@ -6,5 +6,6 @@ Rails.application.routes.draw do
   resources :payments, :only => [:new, :create, :show]
   resources :posts, :only => [:index, :show]
   resources :comments, :only => [:create, :update, :destroy]
+  resources :tweets, :only =>[:create]
   delete 'comments', :to => 'comments#destroy', :as => 'comment_destroy'
 end
