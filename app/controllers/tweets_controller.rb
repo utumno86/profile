@@ -1,7 +1,8 @@
 class TweetsController < ApplicationController
 
   def create
-    puts "This is where the tweet code will go"
+    $twitter.update("This tweet was generated from a Rails app and I am very excited that it worked")
+    redirect_to :back
   end
 
 end
