@@ -30,5 +30,5 @@ TODO List
 -   Write an Rspec suite to test functionality (for some reason)(Work In Progress 04-22-2016)
 -   Remove the Hamburger menu icon from the Navbar when not on the home page
 -   Fix terrible looking comments
--   Generally clean up the front end
+-   Generally clean up the front end (Work In Progress 08-12-2016)
 -   Clean up the way the site looks in mobile
