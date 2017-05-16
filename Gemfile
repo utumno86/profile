@@ -1,43 +1,43 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 ruby '2.3.1'
-gem 'rails'
-gem 'sass-rails'
-gem 'uglifier'
-gem 'coffee-rails'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder'
-gem 'font-awesome-sass'
 gem 'bootstrap-sass'
-gem 'devise'
-gem 'pg'
-gem 'puma'
-gem 'slim-rails'
-gem 'rails_admin'
-gem 'stripe'
 gem 'carrierwave'
+gem 'coffee-rails'
+gem 'devise'
 gem 'fog'
-gem 'semantic_logger'
+gem 'font-awesome-sass'
+gem 'jbuilder'
+gem 'jquery-rails'
 gem 'mini_magick'
-gem 'sendgrid-ruby'
+gem 'pg'
 gem 'pry-rails'
 gem 'pry-rescue'
+gem 'puma'
+gem 'rails'
+gem 'rails_admin'
 gem 'redcarpet'
-gem 'twitter'
+gem 'sass-rails'
+gem 'semantic_logger'
+gem 'sendgrid-ruby'
+gem 'slim-rails'
+gem 'stripe'
+gem 'turbolinks'
 gem 'tweetstream'
+gem 'twitter'
+gem 'uglifier'
 
 group :development, :test do
   gem 'byebug'
+  gem 'cucumber'
   gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'cucumber'
 end
 
 group :development do
-  gem 'web-console'
-  gem 'spring'
   gem 'better_errors'
   gem 'foreman'
   gem 'guard-bundler'
@@ -49,7 +49,9 @@ group :development do
   gem 'rb-fchange', :require => false
   gem 'rb-fsevent', :require => false
   gem 'rb-inotify', :require => false
+  gem 'spring'
   gem 'spring-commands-rspec'
+  gem 'web-console'
 end
 
 group :test do
