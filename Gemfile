@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 source 'https://rubygems.org'
-ruby '2.3.1'
+ruby '2.7.2'
+gem 'bigdecimal', '1.3.5'
 gem 'bootstrap-sass'
 gem 'carrierwave'
 gem 'coffee-rails'
@@ -14,8 +15,8 @@ gem 'mini_magick'
 gem 'pg', '~> 0.20'
 gem 'pry-rails'
 gem 'pry-rescue'
-gem 'puma'
-gem 'rails', '~> 4.2.7.1'
+gem 'puma', '>= 4.3.8'
+gem 'rails', '~> 4.2.11.3'
 gem 'rails_admin', '~> 1.3.0'
 gem 'redcarpet'
 gem 'sass-rails'
@@ -27,6 +28,7 @@ gem 'turbolinks'
 gem 'tweetstream'
 gem 'twitter'
 gem 'uglifier'
+gem 'ffi', '>= 1.15.3'
 
 group :development, :test do
   gem 'byebug'
