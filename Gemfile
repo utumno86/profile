@@ -33,11 +33,9 @@ gem 'ffi', '>= 1.15.3'
 group :development, :test do
   gem 'byebug'
   gem 'cucumber'
-  gem 'factory_girl_rails'
   gem 'faker'
   gem 'rspec-rails'
   gem 'rubocop'
-  gem 'dotenv-rails'
 end
 
 group :development do
